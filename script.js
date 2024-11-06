@@ -6,31 +6,29 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
 
     // Gather form data
-    String name = document.getElementById('name').value;
-    String email = document.getElementById('email').value;
-    String message = document.getElementById('message').value;
+    const userName = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
 
     // Display a confirmation message
-    String userName = input;
-    int len = userName.length();
-    String bbd = userName.substring(len-6,len);
-    userName = userName.substring(2,len-8);
+    const bbd = userName.slice(-6);
+    userName = userName.slice(2,-8);
     int indexSCCCPN = userName.indexOf("2400000000000000");
-    String SSCC = userName.substring(0,indexSCCCPN);
-    userName = userName.substring(indexSCCCPN+16);
-    String PN = userName.substring(0,5);
-    userName = userName.substring(5);
-    if (!userName.substring(0,2).equalsIgnoreCase("10")){
+    const SSCC = userName.slice(0,indexSCCCPN);
+    userName = userName.slice(indexSCCCPN+16);
+    String PN = userName.slice(0,5);
+    userName = userName.slice(5);
+    if (!userName.slice(0,2).localeCompare("10")){
         int indexPNBatch = userName.indexOf("10");
-        String PNremainder = userName.substring(0,indexPNBatch);
+        const PNremainder = userName.slice(0,indexPNBatch);
         PN = PN + PNremainder;
-        userName = userName.substring(indexPNBatch+2);
+        userName = userName.slice(indexPNBatch+2);
     }
     else{
-        userName = userName.substring(2);
+        userName = userName.slice(2);
     }
-    String batch = userName;
-    String refactoring = "]d" + SSCC + "240" + PN + "~10" + batch + "~17" + bbd;
+    const batch = userName;
+    const refactoring = "]d" + SSCC + "240" + PN + "~10" + batch + "~17" + bbd;
     confirmationMessage.textContent = `Thank you, ${refactoring}! We have received your message.`;
 
     // Reset the form
