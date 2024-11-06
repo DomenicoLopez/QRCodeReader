@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
 
     // Gather form data
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+    String name = document.getElementById('name').value;
+    String email = document.getElementById('email').value;
+    String message = document.getElementById('message').value;
 
     // Display a confirmation message
-    confirmationMessage.textContent = `Thank you, ${name}! We have received your message.`;
+    confirmationMessage.textContent = parse(name);
 
     // Reset the form
     form.reset();
