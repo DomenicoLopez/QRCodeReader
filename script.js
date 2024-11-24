@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const SSCC = document.getElementById('SSCC').value;
 
     // Display a confirmation message
-    confirmationMessage.textContent = `]d${SSCC}240${PN}~10${batch}~17${BBD}`;
+    confirmationMessage.textContent = `]d200${SSCC}2400000000000000${PN}~10${batch}~17${BBD}`;
 
     // Reset the form
     form.reset();
