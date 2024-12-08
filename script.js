@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let zeros = 19 - PN.length
     let text = ""
     for (int i = 0; i < zeros; i++) {
-      text = text + "0";
+      text = text + `0`;
     }
     confirmationMessage.textContent = `]d200${SSCC}24${text}${PN}~10${batch}~17${BBD}`;
 
