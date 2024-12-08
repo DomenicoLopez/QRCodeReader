@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     for (int i = 0; i < zeros; i++) {
       text += text + "0";
     }
-    confirmationMessage.textContent = `]d200${SSCC}24${text}${PN}~10${batch}~17${BBD}`;
+    confirmationMessage.textContent = `${zeros}]d200${SSCC}24${text}${PN}~10${batch}~17${BBD}`;
 
 
     // Reset the form
