@@ -39,11 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Display a confirmation message
     let zeros = 19 - PN.length
-    confirmationMessage.textContent = `]d200${SSCC}24`
     for (int i = 0; i < zeros; i++) {
-      confirmationMessage.textContent = `0`
+      text += "0";
     }
-    confirmationMessage.textContent = `${PN}~10${batch}~17${BBD}`;
+    confirmationMessage.textContent = `]d200${SSCC}24${text}${PN}~10${batch}~17${BBD}`;
 
 
     // Reset the form
