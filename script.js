@@ -39,9 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Display a confirmation message
     let zeros = 19 - PN.length
-    confirmationMessage.textContent = `]d200${SSCC}24'
+    confirmationMessage.textContent = `]d200${SSCC}24`
     for (int i = 0; i < zeros; i++) {
-      confirmationMessage.textContent = '0'
+      confirmationMessage.textContent = `0`
     }
     confirmationMessage.textContent = `${PN}~10${batch}~17${BBD}`;
 
