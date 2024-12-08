@@ -10,7 +10,8 @@
 
   <header>
     <h1>Welcome to Bar Code Maker</h1>
-    <p>This website converts label information into a Honeywell barcode</p>
+    <p>This website converts label information into a Honeywell barcode. Works for 5-digit PN.\n
+      Reconstruction Formula used is ]d200 + SSCC + 240* + PN + ~10 + batch + ~17 + BBD</p>
   </header>
 
   <main>
@@ -31,7 +32,7 @@
         <label for="BBD">BBD (YYMMDD):</label>
         <input type="text" id="BBD" name="BBD" required>
 
-        <label for="SSCC">SSCC (changed12):</label>
+        <label for="SSCC">SSCC:</label>
         <input type="text" id="SSCC" name="SSCC" required>
         
 <!--        <label for="message">Message:</label>-->
