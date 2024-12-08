@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Display a confirmation message
     let zeros = 19 - PN.length
+    let text = ""
     for (int i = 0; i < zeros; i++) {
       text += "0";
     }
