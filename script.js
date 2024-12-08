@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const SSCC = document.getElementById('SSCC').value;
 
     // Display a confirmation message
-    int zeros = 19 - PN.length
+    let zeros = 19 - PN.length
     let text = ""
     for (let i = 0; i < zeros; i++) {
       text += text + "0";
